@@ -9,6 +9,11 @@
 // Customize this to change the URL to open Loop to something other than the display name
 //URL_SCHEME_NAME = $(MAIN_APP_DISPLAY_NAME)
 
+// iOS SDK and Deployment Target Configuration for iOS 26+ compatibility
+IPHONEOS_DEPLOYMENT_TARGET = 15.1
+IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*] = 15.1
+IPHONEOS_DEPLOYMENT_TARGET[sdk=iphonesimulator*] = 15.1
+
 // Features
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) EXPERIMENTAL_FEATURES_ENABLED SIMULATORS_ENABLED ALLOW_ALGORITHM_EXPERIMENTS DEBUG_FEATURES_ENABLED
 
